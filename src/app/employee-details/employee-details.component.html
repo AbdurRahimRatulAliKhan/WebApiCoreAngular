@@ -12,12 +12,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr *ngFor="let emp of empService.listEmployee">
+            <td>{{emp.name}}</td> <!-- data interpolation -->
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.doj}}</td>
+            <td>{{emp.designation}}</td>
+            <td>{{emp.age}}</td>
         </tr>
     </tbody>
 </table>
