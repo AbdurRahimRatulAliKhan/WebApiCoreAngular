@@ -1,4 +1,4 @@
-export class Employee {
+export class Epmloyee {
     id: number;
     name: string;
     lastName: string='';
