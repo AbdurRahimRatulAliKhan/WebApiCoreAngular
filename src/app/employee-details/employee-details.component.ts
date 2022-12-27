@@ -12,7 +12,7 @@ import { EmployeeService } from '../shared/employee.service';
 
 export class EmployeeDetailsComponent implements OnInit {
   constructor(public empService:EmployeeService){}
-  ngOnInit(): void {
+  ngOnInit() {
     this.empService.getEmployees().subscribe(data=>{
       this.empService.listEmployee=data;
     });
